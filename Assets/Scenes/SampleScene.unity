@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &63442778
 Transform:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: RESTART
 --- !u!222 &114881929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -530,7 +530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &892856320
 RectTransform:
   m_ObjectHideFlags: 0
@@ -548,8 +548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 521, y: -237}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: -86}
+  m_SizeDelta: {x: 399.3165, y: 80.3824}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892856321
 MonoBehaviour:
@@ -704,6 +704,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3493384017882615614, guid: 3e348010afb49934390f1c8d4dc95415, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1604826649}
+    - targetCorrespondingSourceObject: {fileID: 3493384017882615614, guid: 3e348010afb49934390f1c8d4dc95415, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1604826650}
   m_SourcePrefab: {fileID: 100100000, guid: 3e348010afb49934390f1c8d4dc95415, type: 3}
 --- !u!1 &1051630630
 GameObject:
@@ -937,7 +940,107 @@ MonoBehaviour:
   logic: {fileID: 0}
   birdIsAlive: 1
   spawner: {fileID: 63442776}
-  gameOverScreen: {fileID: 1828601833}
+  gameOverScreen: {fileID: 892856319}
+  sound: {fileID: 1604826650}
+  jump: {fileID: 8300000, guid: d9b295c4c341a9b4eaa6daa584b707ef, type: 3}
+  dead: {fileID: 8300000, guid: 0b6c190405246a34991c12fa5f0ea4c5, type: 3}
+  score: {fileID: 8300000, guid: 34ab857f7267ccd4691ecdb06d2901fa, type: 3}
+--- !u!82 &1604826650
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604826644}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1640576139
 GameObject:
   m_ObjectHideFlags: 0
